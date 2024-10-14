@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sidebar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button 
+                    type="button"
+                    class="sidebar-burger"
+                    onclick="toggleSidebar()"
+                ></button>
+                <img src="" class="sidebar-logo">
+            </header>
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <img src="./icon assets/home.svg">
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/transaction.svg">
+                    <span>Transcations</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/investment.svg">
+                    <span>Investments</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/loan.svg">
+                    <span>Loans</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/credit card.svg">
+                    <span>Credit Card</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/account.svg">
+                    <span>Account</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/search.svg">
+                    <span>Search</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/help.svg">
+                    <span>Help</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/setting.svg">
+                    <span>Setting</span>
+                </button>
+                <button type="button">
+                    <img src="./icon assets/log out.svg">
+                    <span>Logout</span>
+                </button>
+            </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+</body>
+</html>

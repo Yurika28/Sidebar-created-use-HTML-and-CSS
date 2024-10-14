@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    background: white;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    background-color: antiquewhite;
+    transition: width 0.4s;
+}
+
+body.open .sidebar {
+    width: 260px;
+    color: #000000;
+}
+
+.sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0 1.25rem 0 0;
+    background: rgb(179, 167, 152);
+}
+
+.sidebar-burger {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    background: url(./header/burger.svg) no-repeat center center;
+}
+
+/* body.open .sidebar-burger{
+    background: url(./header/close.svg) no-repeat no-repeat center center;
+} */
+
+.sidebar-logo{
+    height: 20px;
+}
+
+.sidebar-menu{
+    display: grid;
+}
+
+
+.sidebar-menu > button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+}
+.sidebar-menu >button:hover{
+    background-color: rgb(203, 194, 181);
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.sidebar-menu > button > img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-menu > button > span {
+    color: #000000;
+}

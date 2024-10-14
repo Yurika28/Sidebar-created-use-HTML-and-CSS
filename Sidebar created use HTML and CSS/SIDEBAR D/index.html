@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar active">
+        <div class="sidebar-header">
+            <img src="./icons/profile.png" alt="profile image">
+            <div class="user-profile">
+                <h3>Yurika Maha</h3>
+                <span>Frontend Developer</span>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-menu">
+                <span class="nav-header">Main</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/home.svg" alt="home-icon">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/portofolio.svg" alt="home-icon">
+                            <span>Portofolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/day trading.svg" alt="home-icon">
+                            <span>Day Trading</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/portofolio.svg" alt="home-icon">
+                            <span class="space">Stocks</span>
+                            <img class="dropdown" src="./icons/dropdown.svg" alt="dropdown-arrow">
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">
+                                    <span>Market Overview</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Stock Screening</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Watchlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Market News</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/crypto.svg" alt="home-icon">
+                            <span class="space">Crypto</span>
+                            <img class="dropdown" src="./icons/dropdown.svg" alt="dropdown-arrow">
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">
+                                    <span>Market Overview</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Crypto Screening</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Watchlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Market News</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/robot.svg" alt="home-icon">
+                            <span>Premium Fintech</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/payment history.svg" alt="home-icon">
+                            <span>Payment History</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/analytic.svg" alt="home-icon">
+                            <span class="space">Tool & Analytic</span>
+                            <img class="dropdown" src="./icons/dropdown.svg" alt="dropdown-arrow">
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">
+                                    <span>Risk Management</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Personalized Consulting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Fidelity Investment</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Exclusive Market Data</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <span class="nav-header">Support</span>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/contact us.svg" alt="home-icon">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/faq.svg" alt="home-icon">
+                            <span>FAQ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <span class="nav-header">Setting</span>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./icons/setting.svg" alt="home-icon">
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icons/logout.svg" alt="home-icon">
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const dropdown = document.querySelectorAll(".dropdown");
+        for (var i = 0; i < dropdown.length; i++){
+            dropdown[i].addEventListener("click", (e) =>{
+                let dropdownMenu = e.target.parentElement.parentElement;
+                console.log(dropdownMenu);
+                dropdownMenu.classList.toggle("showMenu") 
+            });
+        }
+    </script>
+</body>
+</html>
